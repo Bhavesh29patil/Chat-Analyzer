@@ -1,0 +1,7 @@
+matplotlib==3.8.0
+matplotlib==3.8.2
+pandas==2.0.3
+seaborn==0.13.0
+streamlit==1.29.0
+urlextract==1.8.0
+wordcloud==1.9.3
