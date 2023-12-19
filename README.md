@@ -1,6 +1,6 @@
 # Chat Analyzer
 
-Website is Live  : [Click Here](chat-analyzer-whatsapp.streamlit.app/)
+Website is Live  : [Click Here](https://chat-analyzer-whatsapp.streamlit.app/)
 
 ## Installation
 
