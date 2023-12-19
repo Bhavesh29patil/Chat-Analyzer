@@ -3,15 +3,24 @@ import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-st.sidebar.title(":green[WhatsApp Chat Analyzer]")
 on = st.sidebar.toggle('Click Here For Instructions')
 if on:
     st.sidebar.write("Upload your Whatsapp Chat (Strictly in 24 hrs format. 12 hrs (am/pm) is not accepted will lead to an error)")
     st.sidebar.image('instruction_image.jpg')
 
+
 uploaded_file = st.sidebar.file_uploader(":green[Choose a file]")
+if uploaded_file is None:
+    st.title("WhatsApp Chat Analyzer")
+    st.text("")
+    st.image("whatsapp_logo.png", width=200)
+    st.text("")
+    st.text("")
+    st.text("")
+    st.write("Check Source Code : [Link](https://github.com/Bhavesh29patil/Chat-Analyzer/tree/main)")
+
 if uploaded_file is not None:
+    st.sidebar.title(":green[WhatsApp Chat Analyzer]")
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
